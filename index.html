@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Form validation without JS or any library</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Adhirsaurio" />
+        <meta name="description" content="Form validation without JS or any library" />
+
+        <!-- Bootstrap v5.2.3-->
+        <link href="assets/css/bootstrapv5.css" rel="stylesheet"/>
+        <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+        <!-- Dselect library -->
+        <link rel="stylesheet" href="https://unpkg.com/@jarstone/dselect/dist/css/dselect.css">
+        <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
+        <!-- Favicon -->
+        <link href="assets/img/world.png" type="image/x-icon" rel="icon"/>
+        <!-- Your custom css -->
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <!-- Bootstrap v5.2.3core JS-->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body class="d-flex flex-column min-vh-100">
+        
+        <span id="forkongithub"><a href="https://github.com/adhirsaurio/Form-validation-no-Js">Fork me on GitHub</a></span>
+        
+        <div class="container">
+            <h1 class="mt-2 text-center text-primary mb-5">Form validation without JS or any library</h1>
+            <div class="col-md-3">&nbsp;</div>
+            <form class="row gy-2 gx-3 align-items-center">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName" pattern="\w{3,16}">
+                    <div class="error-msg col-md-6">
+                        Only letters
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="inputPassword4" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <div class="error-msg col-md-6">
+                        Valid Email
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" pattern=".{8,}">
+                    <div class="error-msg col-md-6">
+                        Create a strong password
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Confirm password</label>
+                    <input type="password" class="form-control" id="inputPassword4" pattern=".{8,}">
+                    <div class="error-msg col-md-6">
+                        No match with password
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" pattern="[A-Za-z]{3,25}">
+                    <div class="error-msg col-md-6">
+                        Fill address, more than 3 letters
+                    </div>
+                </div>
+                <div class="col-6">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" pattern="[A-Za-z]{5,25}">
+                    <div class="error-msg col-md-6">
+                        Fill address, more than 5 letters 
+                    </div>
+                </div>
+                        
+            </form>
+            <div class="col-md-3">&nbsp;</div>
+        </div>
+
+        <footer class="footer text-center mt-auto bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="lead mb-0"><b>Form validation without JS or any library</b><a href="https://github.com/adhirsaurio/Form-validation-no-Js"><i class="bi bi-github"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright py-4 text-center text-black bg-primary">
+            <div class="container"><small>Form validation without JS or any library © 2023</small></div>
+        </div>
+
+    </body>
+</html>
